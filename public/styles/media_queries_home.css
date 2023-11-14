@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1129px) {
+  .center h1 {
+    font-size: 3rem;
+  }
+  .center {
+    width: 82%;
+  }
+  .center h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 954px) {
+  .center {
+    width: 90%;
+  }
+  .card {
+    width: 85%;
+  }
+  .card-image svg {
+    width: 300px;
+    height: 300px;
+  }
+  .center h3 {
+    font-size: 1rem;
+  }
+  .footer h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 931px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transition: 0.2s all ease-in-out;
+    transform: translate(-10000%, -1000%);
+  }
+  body {
+    background-color: white;
+  }
+  .links a {
+    margin: 15px 0;
+  }
+  .links a:not(:first-child) {
+    margin-left: 0px;
+  }
+  .navbar-btn-dash {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .card-texts {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
+  .card-texts p {
+    margin: 10px auto;
+  }
+  .mentions {
+    width: 90%;
+    margin: auto;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .card:nth-child(2) {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .card svg {
+    width: 250px;
+    height: 250px;
+  }
+  .card:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 802px) {
+  .center h1 {
+    font-size: 2.8rem;
+  }
+  .center {
+    width: 100%;
+  }
+  .footer h1 {
+    font-size: 2rem;
+  }
+  .footer h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .center h1 {
+    font-size: 2.4rem;
+  }
+  .center h3 {
+    font-size: 0.9rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .center h1 {
+    font-size: 2.1rem;
+  }
+  .center h3 {
+    font-size: 0.9rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+  .footer h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 437px) {
+  .center h1 {
+    font-size: 1.8rem;
+  }
+  .card {
+    margin-top: 50px;
+  }
+  .card svg {
+    width: 200px;
+    height: 200px;
+  }
+  .card h1 {
+    font-size: 1.8rem;
+  }
+  .mentions {
+    width: 100%;
+  }
+  .card-texts {
+    width: 100%;
+  }
+  .navbar-logo img {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+  .center {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 344px) {
+  .footer button {
+    margin-top: 10px;
+  }
+}

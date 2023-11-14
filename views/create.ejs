@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/create.css" />
+    <link rel="stylesheet" href="/styles/media_queries_create.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="logo_.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="http://localhost:5000/">Home</a>
+          <a href="http://localhost:5000/#section-2">About</a>
+          <a href="mailto:shivsatyam86@gmail.com">Contact</a>
+          <a href="/docs">Docs</a>
+          <a href="#">Github</a>
+        </div>
+        <div class="get-started-navbar">
+          <button>Create &rarr;</button>
+        </div>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="center">
+      <form action="/render" method="post">
+        <input
+          type="text"
+          autocomplete="off"
+          name="name"
+          class="name"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          autocomplete="off"
+          name="title"
+          class="title"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          name="keywords"
+          class="keywords"
+          placeholder="Keyword (Choose the right word)"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          name="points"
+          class="points"
+          placeholder="Number of points"
+          autocomplete="off"
+        />
+        <textarea
+          name="paragraph"
+          id="paragraph"
+          cols="30"
+          rows="5"
+          placeholder="Paragraph"
+          autocomplete="off"
+        ></textarea>
+        <button type="submit" class="create">Submit &rarr;</button>
+      </form>
+    </div>
+    <script src="/scripts/hamburger.js"></script>
+  </body>
+</html>

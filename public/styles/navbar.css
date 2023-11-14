@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Roboto:wght@300;400&family=Work+Sans:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-top: 20px;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.links a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s all;
+}
+
+.links a:not(:first-child) {
+  margin-left: 35px;
+}
+
+.links a:hover {
+  color: #3651bf;
+  border-bottom: 1px solid #3651bf;
+}
+
+.get-started-navbar button {
+  background-color: #3651bf;
+  color: white;
+  padding: 12px 25px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s all;
+  border: 1px solid #3651bf;
+}
+
+.get-started-navbar {
+  /* background-color: green; */
+  width: 130px;
+}
+
+.get-started-navbar button:hover {
+  background: transparent;
+  border: 1px solid #3651bf;
+  color: black;
+  word-spacing: 10px;
+}
+
+.lines {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #3651bf;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.lines:not(:first-child) {
+  margin-top: 6px;
+}

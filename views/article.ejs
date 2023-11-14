@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/article.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="/logo_.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="http://localhost:5000/">Home</a>
+          <a href="http://localhost:5000/#section-2">About</a>
+          <a href="mailto:shivsatyam86@gmail.com">Contact</a>
+          <a href="/docs">Docs</a>
+          <a href="#">Github</a>
+        </div>
+        <div class="get-started-navbar-2">
+          <button>Create &rarr;</button>
+        </div>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="center-content">
+      <div class="images"></div>
+      <h1 class="title"><%= obj.title %></h1>
+      <h1 class="user">Published by: <%= obj.name %></h1>
+      <h1 class="keywords">#<%= obj.keywords %></h1>
+
+      <ul
+        class="w-full space-y-10 text-gray-500 list-disc list-inside dark:text-black-400 paragraph"
+        style="margin-top: 40px; width: 70%"
+      ></ul>
+    </div>
+    <script>
+      let url = `<%- obj.images %>`;
+      let items = url.split(" ");
+      for (let i = 0; i < items.length; ++i) {
+        request = new XMLHttpRequest();
+        request.open("GET", items[i], true);
+        request.send(null);
+        request.onreadystatechange = function () {
+          if (request.readyState === 4) {
+            if (request.status === 200) {
+              let iti = document.createElement("img");
+              iti.src = request.responseURL;
+              document.querySelector(".images").appendChild(iti);
+            }
+          }
+        };
+      }
+
+      let para = `<%- obj.para %>`.split(".");
+      for (let i = 0; i < para.length - 1; ++i) {
+        let arg = document.createElement("li");
+        arg.innerText = para[i];
+        arg.innerText += ".";
+        if (arg.innerHTML.length < 5 || arg.innerHTML == ".") {
+          continue;
+        }
+        document.querySelector(".paragraph").appendChild(arg);
+      }
+    </script>
+    <script src="/scripts/hamburger.js"></script>
+  </body>
+</html>

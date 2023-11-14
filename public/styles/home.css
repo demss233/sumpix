@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Roboto:wght@300;400&family=Work+Sans:wght@300;400&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.container-fluid {
+  /* background: green; */
+  height: fit-content;
+  width: 85%;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:nth-child(2) {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: 55px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s all;
+}
+
+.links a:not(:first-child) {
+  margin-left: 35px;
+}
+
+.links a:hover {
+  color: #3651bf;
+  border-bottom: 1px solid #3651bf;
+}
+
+.get-started-navbar button {
+  background-color: #3651bf;
+  color: white;
+  padding: 12px 25px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid #3651bf;
+}
+
+.get-started-navbar {
+  /* background-color: green; */
+  width: 130px;
+}
+
+.get-started-navbar button:hover {
+  background: transparent;
+  border: 1px solid #3651bf;
+  color: black;
+  word-spacing: 10px;
+}
+
+.center {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+  /* background-color: blue; */
+}
+
+.center h1 {
+  font-size: 3.5rem;
+}
+
+.center h3 {
+  /* background-color: red; */
+  width: 70%;
+  color: rgb(73, 72, 72);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.center button {
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  margin-top: 80px;
+  opacity: 0;
+  transition: 0.2 s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.mouse {
+  width: 45px;
+  height: 80px;
+  border: 3px solid #333;
+  border-radius: 60px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+.card {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  align-items: center;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+
+.card-texts {
+  width: 50%;
+  /* background-color: green; */
+}
+
+.card-texts h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.card-image img {
+  width: 350px;
+  height: 350px;
+}
+
+.card p {
+  margin-top: 20px;
+  color: rgb(73, 72, 72);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 130px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer svg {
+  width: 50px;
+  height: 50px;
+  color: red;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.special {
+  text-decoration: none;
+  font-style: italic;
+  color: #3651bf;
+  border-bottom: 1px solid #3651bf;
+}
+
+.footer h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.footer h3 {
+  color: rgb(73, 72, 72);
+  margin-top: 20px;
+}
+
+.newsletter {
+  margin-top: 20px;
+  height: 40px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.newsletter:focus {
+  outline: 1px solid #3651bf;
+}
+
+.subscribe {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #3651bf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.footer svg {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.footer svg:hover {
+  transform: scale(1.4);
+}
+
+.lines {
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #3651bf;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.lines:not(:first-child) {
+  margin-top: 6px;
+}
