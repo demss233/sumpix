@@ -15,5 +15,5 @@ menu.addEventListener("click", (event) => {
 
 document.querySelector(".navbar-logo").addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.href = "http://localhost:5000/";
+  window.location.href = "https://sumpix.cyclic.app/";
 });
