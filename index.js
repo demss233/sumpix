@@ -7,7 +7,6 @@ const port = process.env.PORT || 5000;
 const summarise = require("./summarize");
 const mongoose = require("mongoose");
 const note = require("./schema/note");
-const unsplash_api_key = process.env.key;
 
 const database_url = process.env.password;
 
@@ -33,6 +32,10 @@ app.get("/show/:mongoid", async (request, response) => {
   const Note = await note.findOne({ _id: request.params.mongoid });
   // response.send(Note.name + Note.title);
   response.render("article", { obj: Note });
+});
+
+app.get("/docs", (request, response) => {
+  response.render("docs");
 });
 
 app.post("/render", async (request, response) => {
