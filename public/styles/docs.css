@@ -1,0 +1,42 @@
+.instructions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+h3 {
+  margin-top: 25px;
+  color: rgb(84, 82, 82);
+}
+
+.instructions h3 {
+  text-align: center;
+  width: 70%;
+  /* background-color: red; */
+}
+
+.ideal-form {
+  /* margin-top: 40px; */
+  width: fit-content;
+  background-color: #3651bf;
+  color: white;
+  padding: 12px 25px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s all;
+  border: 1px solid #3651bf;
+  margin: 40px auto;
+}
+
+.ideal-form:hover {
+  background: transparent;
+  border: 1px solid #3651bf;
+  color: black;
+  word-spacing: 10px;
+}
