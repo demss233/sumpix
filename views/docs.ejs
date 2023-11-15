@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumpix - Documentation</title>
+    <link rel="stylesheet" href="/styles/docs.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <style>
+      @media only screen and (max-width: 914px) {
+        .hamburger {
+          display: block;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          transition: 0.2s all ease-in-out;
+          transform: translate(-10000%, -1000%);
+        }
+        .links a {
+          margin: 15px 0;
+        }
+        .links a:not(:first-child) {
+          margin-left: 0px;
+        }
+        .get-started-navbar {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="logo_.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="https://sumpix.cyclic.app/">Home</a>
+          <a href="https://sumpix.cyclic.app/#section-2">About</a>
+          <a href="mailto:shivsatyam86@gmail.com">Contact</a>
+          <a href="/docs">Docs</a>
+          <a href="https://github.com/demss233/sumpix">Github</a>
+        </div>
+        <div class="get-started-navbar navbar-btn-dash">
+          <button
+            onclick="window.location.href='https://sumpix.cyclic.app/create'"
+          >
+            Create &rarr;
+          </button>
+        </div>
+        <div class="hamburger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="instructions">
+      <h3>1. Go to <a href="/create">/create</a> route.</h3>
+      <h3>2. Write your username in the first input box</h3>
+      <h3>3. Choose the appropriate title. (second input box)</h3>
+      <h3>4. Choose an accurate keyword. (third input box)</h3>
+      <h3>
+        5. Kindly use a neat paragraph which is grammatically correct. (it is
+        not supposed to contain latex).
+        <a
+          href="https://byjus.com/english/paragraph-on-nature/#:~:text=For%20all%20of,of%20future%20generations."
+          >like this.</a
+        >
+      </h3>
+      <button
+        class="ideal-form"
+        onclick="window.location.href='https://i.postimg.cc/j2MY1sfw/Screenshot-2023-11-16-002737.png'"
+      >
+        Example &rarr;
+      </button>
+    </div>
+    <script src="/scripts/hamburger.js"></script>
+  </body>
+</html>
