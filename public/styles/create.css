@@ -31,7 +31,7 @@ form textarea {
   padding: 10px;
   border-radius: 5px;
   outline-color: #312e81;
-  resize: vertical;
+  resize: none;
 }
 
 form button {
