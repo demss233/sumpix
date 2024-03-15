@@ -30,16 +30,24 @@
 }
 
 @media only screen and (max-width: 931px) {
-  .links {
+  header {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+    width: 100%;
+    backdrop-filter: blur(15px);
+  }
+  .navbar {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    transition: 0.2s all ease-in-out;
-    transform: translate(-10000%, -1000%);
+    align-items: baseline;
   }
-  body {
-    background-color: white;
+  .links {
+    display: none;
+  }
+  .links-resp {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s all ease-in-out;
   }
   .links a {
     margin: 15px 0;
@@ -52,6 +60,9 @@
   }
   .hamburger {
     display: block;
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
   }
   .card-texts {
     flex-direction: column;

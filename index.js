@@ -30,7 +30,6 @@ app.get("/", (request, response) => {
 
 app.get("/show/:mongoid", async (request, response) => {
   const Note = await note.findOne({ _id: request.params.mongoid });
-  // response.send(Note.name + Note.title);
   response.render("article", { obj: Note });
 });
 
@@ -43,7 +42,6 @@ app.post("/render", async (request, response) => {
     request.body.paragraph,
     parseInt(request.body.points)
   );
-  // console.log(summarised);
   let ret = "";
   let query = request.body.keywords.split(" ");
   for (let i = 0; i < query.length; ++i) {
@@ -51,7 +49,6 @@ app.post("/render", async (request, response) => {
     if (i == 0) ret += unsplash;
     else ret += " " + unsplash;
   }
-  // console.log(ret);
   let Note = new note({
     name: request.body.name,
     title: request.body.title,

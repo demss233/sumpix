@@ -14,7 +14,8 @@ body {
 }
 
 .container-fluid {
-  /* background: green; */
+  opacity: 0;
+  transform: translateY(60px);
   height: fit-content;
   width: 85%;
   height: 95vh;
@@ -23,6 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 1s all ease;
 }
 
 .card:nth-child(2) {
@@ -40,7 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 85%;
-  padding-top: 20px;
+  padding-top: 13px;
   margin: auto;
 }
 
@@ -84,10 +86,6 @@ body {
 }
 
 .center {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -95,7 +93,6 @@ body {
   align-items: center;
   text-align: center;
   height: 50%;
-  /* background-color: blue; */
 }
 
 .center h1 {
@@ -174,6 +171,9 @@ body {
   align-items: center;
   /* background-color: red; */
   justify-content: space-between;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s all ease;
 }
 
 .card-texts {
